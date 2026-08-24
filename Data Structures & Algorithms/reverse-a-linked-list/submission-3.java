@@ -17,8 +17,8 @@ class Solution {
 
         ListNode before = null;
 
-        while ( temp != null ) {
-            ListNode after = temp.next;
+        while ( temp != null ) { // we did this because in end both temp and after are at same position which is null
+            ListNode after = temp.next; 
             temp.next = before;
             before = temp;
             temp = after;
